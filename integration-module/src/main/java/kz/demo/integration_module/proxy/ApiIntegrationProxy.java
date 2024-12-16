@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name="ApiClient",url = "${feign.client.url}",configuration = FeignClientConfig.class)
+@FeignClient(name="WeatherApiClient",url = "${feign.client.url}",configuration = FeignClientConfig.class)
 public interface ApiIntegrationProxy {
     @GetMapping("/current.json")
     WeatherDTO getCurrentWeather(@RequestParam("q") String query);

@@ -1,11 +1,11 @@
-package kz.demo.integration_module.model;
+package kz.main_module.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

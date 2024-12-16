@@ -57,20 +57,4 @@ public class LocationService {
         }
         locationRepository.deleteById(id);
     }
-
-    public void deleteByName(String name) throws NotFoundException {
-        Optional<Location> optLocation = locationRepository.findByName(name);
-        if (optLocation.isEmpty()) {
-            throw new NotFoundException("City by name " + name + " not found");
-        }
-        locationRepository.deleteById(optLocation.get().getId());
-    }
-
-    public boolean existsById(Long id) {
-        return locationRepository.existsById(id);
-    }
-
-    public boolean existsByName(String name) {
-        return locationRepository.existsByName(name);
-    }
 }
