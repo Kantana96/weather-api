@@ -26,5 +26,4 @@ public class AstroDTO {
 
     @JsonProperty("moon_illumination")
     private String moonIllumination;
-    
 }
